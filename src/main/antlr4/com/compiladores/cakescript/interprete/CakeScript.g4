@@ -4,7 +4,7 @@ receta: ingredientes pasos;
 
 ingredientes: 'Ingredientes:' listaIngredientes;
 
-listaIngredientes: (ingrediente)*;
+listaIngredientes: (ingrediente)+;
 
 ingrediente: variable '=' cantidad;
 
@@ -18,7 +18,7 @@ variable: LETRA+;
 
 pasos: 'Pasos:' listaPasos;
 
-listaPasos: (paso)*;
+listaPasos: (paso)+;
 
 paso: comando (parametros)?;
 

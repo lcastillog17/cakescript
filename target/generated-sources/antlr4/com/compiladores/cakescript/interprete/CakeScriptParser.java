@@ -218,20 +218,20 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(39);
+			setState(37); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (_la==LETRA) {
+			do {
 				{
 				{
 				setState(36);
 				ingrediente();
 				}
 				}
-				setState(41);
+				setState(39); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			}
+			} while ( _la==LETRA );
 			}
 		}
 		catch (RecognitionException re) {
@@ -277,11 +277,11 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(42);
+			setState(41);
 			variable();
-			setState(43);
+			setState(42);
 			match(T__1);
-			setState(44);
+			setState(43);
 			cantidad();
 			}
 		}
@@ -329,13 +329,13 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(46);
+			setState(45);
 			numero();
-			setState(48);
+			setState(47);
 			_la = _input.LA(1);
 			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__3) | (1L << T__4) | (1L << T__5) | (1L << T__6) | (1L << T__7) | (1L << T__8) | (1L << T__9))) != 0)) {
 				{
-				setState(47);
+				setState(46);
 				unidad();
 				}
 			}
@@ -384,37 +384,37 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(51); 
+			setState(50); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(50);
+				setState(49);
 				match(DIGITO);
 				}
 				}
-				setState(53); 
+				setState(52); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( _la==DIGITO );
-			setState(61);
+			setState(60);
 			_la = _input.LA(1);
 			if (_la==T__2) {
 				{
-				setState(55);
+				setState(54);
 				match(T__2);
-				setState(57); 
+				setState(56); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				do {
 					{
 					{
-					setState(56);
+					setState(55);
 					match(DIGITO);
 					}
 					}
-					setState(59); 
+					setState(58); 
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				} while ( _la==DIGITO );
@@ -461,7 +461,7 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(63);
+			setState(62);
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__3) | (1L << T__4) | (1L << T__5) | (1L << T__6) | (1L << T__7) | (1L << T__8) | (1L << T__9))) != 0)) ) {
 			_errHandler.recoverInline(this);
@@ -512,17 +512,17 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(66); 
+			setState(65); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(65);
+				setState(64);
 				match(LETRA);
 				}
 				}
-				setState(68); 
+				setState(67); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( _la==LETRA );
@@ -568,9 +568,9 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(70);
+			setState(69);
 			match(T__10);
-			setState(71);
+			setState(70);
 			listaPasos();
 			}
 		}
@@ -618,20 +618,20 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(76);
+			setState(73); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << MIX) | (1L << BATIR) | (1L << HORNEAR) | (1L << CONGELAR) | (1L << DECORAR))) != 0)) {
+			do {
 				{
 				{
-				setState(73);
+				setState(72);
 				paso();
 				}
 				}
-				setState(78);
+				setState(75); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			}
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << MIX) | (1L << BATIR) | (1L << HORNEAR) | (1L << CONGELAR) | (1L << DECORAR))) != 0) );
 			}
 		}
 		catch (RecognitionException re) {
@@ -678,13 +678,13 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(79);
+			setState(77);
 			comando();
-			setState(81);
+			setState(79);
 			_la = _input.LA(1);
 			if (_la==T__11) {
 				{
-				setState(80);
+				setState(78);
 				parametros();
 				}
 			}
@@ -731,11 +731,11 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(83);
+			setState(81);
 			match(T__11);
-			setState(84);
+			setState(82);
 			listaParametros();
-			setState(85);
+			setState(83);
 			match(T__12);
 			}
 		}
@@ -783,25 +783,25 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(95);
+			setState(93);
 			_la = _input.LA(1);
 			if (_la==LETRA || _la==DIGITO) {
 				{
-				setState(87);
+				setState(85);
 				parametro();
-				setState(92);
+				setState(90);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				while (_la==T__13) {
 					{
 					{
-					setState(88);
+					setState(86);
 					match(T__13);
-					setState(89);
+					setState(87);
 					parametro();
 					}
 					}
-					setState(94);
+					setState(92);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				}
@@ -851,19 +851,19 @@ public class CakeScriptParser extends Parser {
 		ParametroContext _localctx = new ParametroContext(_ctx, getState());
 		enterRule(_localctx, 26, RULE_parametro);
 		try {
-			setState(99);
+			setState(97);
 			switch (_input.LA(1)) {
 			case DIGITO:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(97);
+				setState(95);
 				numero();
 				}
 				break;
 			case LETRA:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(98);
+				setState(96);
 				variable();
 				}
 				break;
@@ -914,7 +914,7 @@ public class CakeScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(101);
+			setState(99);
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << MIX) | (1L << BATIR) | (1L << HORNEAR) | (1L << CONGELAR) | (1L << DECORAR))) != 0)) ) {
 			_errHandler.recoverInline(this);
@@ -935,31 +935,31 @@ public class CakeScriptParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\30j\4\2\t\2\4\3\t"+
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\30h\4\2\t\2\4\3\t"+
 		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4"+
 		"\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\3\2\3\2\3\2\3\3\3\3\3\3\3"+
-		"\4\7\4(\n\4\f\4\16\4+\13\4\3\5\3\5\3\5\3\5\3\6\3\6\5\6\63\n\6\3\7\6\7"+
-		"\66\n\7\r\7\16\7\67\3\7\3\7\6\7<\n\7\r\7\16\7=\5\7@\n\7\3\b\3\b\3\t\6"+
-		"\tE\n\t\r\t\16\tF\3\n\3\n\3\n\3\13\7\13M\n\13\f\13\16\13P\13\13\3\f\3"+
-		"\f\5\fT\n\f\3\r\3\r\3\r\3\r\3\16\3\16\3\16\7\16]\n\16\f\16\16\16`\13\16"+
-		"\5\16b\n\16\3\17\3\17\5\17f\n\17\3\20\3\20\3\20\2\2\21\2\4\6\b\n\f\16"+
-		"\20\22\24\26\30\32\34\36\2\4\3\2\6\f\3\2\21\25e\2 \3\2\2\2\4#\3\2\2\2"+
-		"\6)\3\2\2\2\b,\3\2\2\2\n\60\3\2\2\2\f\65\3\2\2\2\16A\3\2\2\2\20D\3\2\2"+
-		"\2\22H\3\2\2\2\24N\3\2\2\2\26Q\3\2\2\2\30U\3\2\2\2\32a\3\2\2\2\34e\3\2"+
-		"\2\2\36g\3\2\2\2 !\5\4\3\2!\"\5\22\n\2\"\3\3\2\2\2#$\7\3\2\2$%\5\6\4\2"+
-		"%\5\3\2\2\2&(\5\b\5\2\'&\3\2\2\2(+\3\2\2\2)\'\3\2\2\2)*\3\2\2\2*\7\3\2"+
-		"\2\2+)\3\2\2\2,-\5\20\t\2-.\7\4\2\2./\5\n\6\2/\t\3\2\2\2\60\62\5\f\7\2"+
-		"\61\63\5\16\b\2\62\61\3\2\2\2\62\63\3\2\2\2\63\13\3\2\2\2\64\66\7\27\2"+
-		"\2\65\64\3\2\2\2\66\67\3\2\2\2\67\65\3\2\2\2\678\3\2\2\28?\3\2\2\29;\7"+
-		"\5\2\2:<\7\27\2\2;:\3\2\2\2<=\3\2\2\2=;\3\2\2\2=>\3\2\2\2>@\3\2\2\2?9"+
-		"\3\2\2\2?@\3\2\2\2@\r\3\2\2\2AB\t\2\2\2B\17\3\2\2\2CE\7\26\2\2DC\3\2\2"+
-		"\2EF\3\2\2\2FD\3\2\2\2FG\3\2\2\2G\21\3\2\2\2HI\7\r\2\2IJ\5\24\13\2J\23"+
-		"\3\2\2\2KM\5\26\f\2LK\3\2\2\2MP\3\2\2\2NL\3\2\2\2NO\3\2\2\2O\25\3\2\2"+
-		"\2PN\3\2\2\2QS\5\36\20\2RT\5\30\r\2SR\3\2\2\2ST\3\2\2\2T\27\3\2\2\2UV"+
-		"\7\16\2\2VW\5\32\16\2WX\7\17\2\2X\31\3\2\2\2Y^\5\34\17\2Z[\7\20\2\2[]"+
-		"\5\34\17\2\\Z\3\2\2\2]`\3\2\2\2^\\\3\2\2\2^_\3\2\2\2_b\3\2\2\2`^\3\2\2"+
-		"\2aY\3\2\2\2ab\3\2\2\2b\33\3\2\2\2cf\5\f\7\2df\5\20\t\2ec\3\2\2\2ed\3"+
-		"\2\2\2f\35\3\2\2\2gh\t\3\2\2h\37\3\2\2\2\r)\62\67=?FNS^ae";
+		"\4\6\4(\n\4\r\4\16\4)\3\5\3\5\3\5\3\5\3\6\3\6\5\6\62\n\6\3\7\6\7\65\n"+
+		"\7\r\7\16\7\66\3\7\3\7\6\7;\n\7\r\7\16\7<\5\7?\n\7\3\b\3\b\3\t\6\tD\n"+
+		"\t\r\t\16\tE\3\n\3\n\3\n\3\13\6\13L\n\13\r\13\16\13M\3\f\3\f\5\fR\n\f"+
+		"\3\r\3\r\3\r\3\r\3\16\3\16\3\16\7\16[\n\16\f\16\16\16^\13\16\5\16`\n\16"+
+		"\3\17\3\17\5\17d\n\17\3\20\3\20\3\20\2\2\21\2\4\6\b\n\f\16\20\22\24\26"+
+		"\30\32\34\36\2\4\3\2\6\f\3\2\21\25c\2 \3\2\2\2\4#\3\2\2\2\6\'\3\2\2\2"+
+		"\b+\3\2\2\2\n/\3\2\2\2\f\64\3\2\2\2\16@\3\2\2\2\20C\3\2\2\2\22G\3\2\2"+
+		"\2\24K\3\2\2\2\26O\3\2\2\2\30S\3\2\2\2\32_\3\2\2\2\34c\3\2\2\2\36e\3\2"+
+		"\2\2 !\5\4\3\2!\"\5\22\n\2\"\3\3\2\2\2#$\7\3\2\2$%\5\6\4\2%\5\3\2\2\2"+
+		"&(\5\b\5\2\'&\3\2\2\2()\3\2\2\2)\'\3\2\2\2)*\3\2\2\2*\7\3\2\2\2+,\5\20"+
+		"\t\2,-\7\4\2\2-.\5\n\6\2.\t\3\2\2\2/\61\5\f\7\2\60\62\5\16\b\2\61\60\3"+
+		"\2\2\2\61\62\3\2\2\2\62\13\3\2\2\2\63\65\7\27\2\2\64\63\3\2\2\2\65\66"+
+		"\3\2\2\2\66\64\3\2\2\2\66\67\3\2\2\2\67>\3\2\2\28:\7\5\2\29;\7\27\2\2"+
+		":9\3\2\2\2;<\3\2\2\2<:\3\2\2\2<=\3\2\2\2=?\3\2\2\2>8\3\2\2\2>?\3\2\2\2"+
+		"?\r\3\2\2\2@A\t\2\2\2A\17\3\2\2\2BD\7\26\2\2CB\3\2\2\2DE\3\2\2\2EC\3\2"+
+		"\2\2EF\3\2\2\2F\21\3\2\2\2GH\7\r\2\2HI\5\24\13\2I\23\3\2\2\2JL\5\26\f"+
+		"\2KJ\3\2\2\2LM\3\2\2\2MK\3\2\2\2MN\3\2\2\2N\25\3\2\2\2OQ\5\36\20\2PR\5"+
+		"\30\r\2QP\3\2\2\2QR\3\2\2\2R\27\3\2\2\2ST\7\16\2\2TU\5\32\16\2UV\7\17"+
+		"\2\2V\31\3\2\2\2W\\\5\34\17\2XY\7\20\2\2Y[\5\34\17\2ZX\3\2\2\2[^\3\2\2"+
+		"\2\\Z\3\2\2\2\\]\3\2\2\2]`\3\2\2\2^\\\3\2\2\2_W\3\2\2\2_`\3\2\2\2`\33"+
+		"\3\2\2\2ad\5\f\7\2bd\5\20\t\2ca\3\2\2\2cb\3\2\2\2d\35\3\2\2\2ef\t\3\2"+
+		"\2f\37\3\2\2\2\r)\61\66<>EMQ\\_c";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
